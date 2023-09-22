@@ -16,7 +16,7 @@ export default function NavBar () {
     
     <div className="right-menu">
         <div className="right-menu-option" >
-            <img src={about_light} className="icons_light"/><a className="nav-link menu-text" href="/">About</a>
+            <img src={about_light} className="icons_light"/><a className="nav-link menu-text" href="#about-heading">About</a>
         </div>
         <div className="right-menu-option">
             <img src={linkedin_light} className="icons_light"/><a className="nav-link menu-text" href="https://www.linkedin.com/in/shruti-singh-a172931b8/">LinkedIn</a>
