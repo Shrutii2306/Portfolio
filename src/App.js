@@ -9,10 +9,9 @@ import BackgroundText from './components/secondContainer/BackgroundText';
 import MainHeading from './components/thirdContainer/MainHeading';
 import AboutContent from './components/thirdContainer/AboutContent';
 import SkillsContainer from './components/thirdContainer/SkillsContainer';
-import ResumeBtn from './components/firstContainer/ResumeBtn';
 import EmailForm from './components/fourthContainer/EmailForm';
-import Avatar from './components/fourthContainer/Avatar';
 import SideIcons from './components/fourthContainer/SideIcons';
+import AvatarImage from './components/fourthContainer/AvatarImage';
 
 function App() {
   return (
@@ -43,7 +42,7 @@ function App() {
       </div>
 
       <div className='fourth-container'>
-      <Avatar/>
+        <AvatarImage/>
         <EmailForm/>
         
         <div className='side-icon-div'>
