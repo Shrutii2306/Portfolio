@@ -1,5 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Inter:wght@400;500;600;900&family=Libre+Baskerville:wght@700&family=Rubik+Vinyl&display=swap');
+
+@media screen  and (max-width: 1080px){
+
+  .App{
+    display: none;
+  }
+  
+}
+
+@media screen  and (min-width: 1080px) {
+  
+
 ::-webkit-scrollbar {
       width: 0.4em
     }
@@ -19,13 +31,13 @@
 
 /*FIRST CONTAINER STYLES*/
 
-.first-container-div{
+.first-container{
 
   margin-top: -0.5rem;
   height: fit-content;
   background-color: #181515;
   margin: none;
-  padding-bottom: 11rem;
+  padding-bottom: 3rem;
   min-width: fit-content;
 }
 
@@ -125,17 +137,19 @@ img {
   font-size: 4.0rem;
   margin-top: -0.5rem;
   z-index: 1;
+  font-family: Libre Baskerville;
 }
 
 .row2-s{
 
+  font-family: Libre Baskerville;
   font-size: 4.1rem;
   font-weight: bold;
-  opacity: 50%;
+  opacity: 90%;
   color: #e55c5c;
   z-index: 2;
   margin-top: -6rem;
-  margin-left: 9rem;
+  margin-left: 10.8rem;
 }
 
 .row3-text{
@@ -151,12 +165,21 @@ img {
   margin-top: 1.5rem;
 }
 
-.row5-text{
+.row5-btn{
   float: left;
   margin-top: 2rem ;
   height: 2.6rem;
   background-color: #EA8787;
+  border: none;
+  padding: 0 1rem;
 }
+
+.row5-btn:hover{
+
+  background-color: #f0aaaa;  
+  box-shadow: 0px 0px 20px rgb(76, 72, 72);
+}
+
 
 .content{
 
@@ -174,6 +197,27 @@ flex-direction: column;
 align-items: flex-start;
 }
 
+.resume-link-div{
+  
+  margin-top: 35rem;
+}
+.resume{
+  height: 3.7rem;
+  width: 13rem;
+  z-index: 1;
+  margin-right: 0rem;
+  float: right;
+}
+
+.resume-title{
+
+  z-index: 2;
+  float: right;
+  font-size: 1.5rem;
+  margin-right:2rem;
+  margin-top: -3rem;
+
+}
 /*SECOND CONTAINER STYLES*/
 
 .second-container{
@@ -183,12 +227,9 @@ align-items: flex-start;
   background-color: #312D2D;
   min-width: max-content;
   overflow-x: hidden;
-}
-
-.middle-data{
-
   
 }
+
 .sidebar-top{
 
   font-weight: bold;
@@ -525,6 +566,7 @@ align-items: flex-start;
   margin-top: -6.5rem;
   margin-right: 6rem;
 }
+}
 
 .bubble2{
 
@@ -543,24 +585,197 @@ align-items: flex-start;
 }
 
 
+/*FOURTH CONTAINER*/
+
+.fourth-container{
+
+  min-height: 40rem;
+  background-color: #222020;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form{
+
+  display: flex;
+  flex-direction: column;
+  min-width: 30rem;
+  align-items: start;
+  text-align: start;
+  padding: 3rem;
+  margin-left: -17rem;
+}
+
+.contact-heading{
+    
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content:stretch;
+    flex-direction: row;
+    color: #DD9797;
+    font-family: libre baskerville;
+    margin-left: 4rem;
+    margin-top: 3rem;
+
+}
+.contact-form-btn {
+  
+  background: none;
+  border-color:  #FFAF69;
+  width: 6rem;
+  margin-left:3rem ;
+  border:1px solid;
+  border-radius: 2px;
+  color: #e3c7af;
+  padding: 0.1rem;
+  box-shadow: 0px 0px 20px black;
+}
+
+.contact-form-btn:hover{
+
+  box-shadow: 0px 0px 20px rgb(40, 36, 36);
+  background-color: #e3c7af;
+  color: #222020 ;
+  border: #222020 ;
+}
+.contact-form-btn-disabled {
+  
+  background: none;
+  border-color: rgba(80, 42, 19, 0.956);
+  width: 6rem;
+  margin-left:3rem ;
+  border-radius: 2px;
+  color: rgba(80, 42, 19, 0.956);
+  box-shadow: 0px 0px 20px black;
+}
+
+label{
+  width: 8rem;
+  color: #aba8a5;
+  font-size: 0.9rem;
+}
+
+.ver-code{
+
+  width: 9rem;
+}
+.form-row-1{
+
+  margin-top: 4rem;
+  display: flex;
+  min-width: 30rem;
+  flex-direction: column;
+}
+
+.form-row-2{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.form-row-3{
+
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 25rem;
+}
+
+.form-row-4{
+
+  margin-top: 1rem;
+  display: flex;
+  min-width: 25rem;
+  flex-direction: column;
+}
+
+.form-row-5{
+
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 25rem;
+}
+
+.mail-div{
+
+  display: flex;
+  flex-direction: column;
+}
+
+.email-div{
+
+  display: flex;
+  flex-direction: column;
+}
 
 
 
+.textarea{
 
+  min-width: 20rem;
+  min-height: 1.8rem;
+  overflow-y: hidden;
+  background: none;  
+  border: none;
+  border-bottom: 2px solid;
+  border-color:#572b04;;
+}
 
+input{
 
+  background: none;
+  border: none;
+  border-bottom: 2px solid;
+  border-color:#572b04;
+  width:20rem;
+}
 
+.send-btn{
 
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 1.5rem;
+}
 
+.avatar{
 
+  height: 40rem;
+  margin-top: 6rem;
+  margin-left: -3rem;
+}
 
+.side-icons{
 
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-top: 14rem ;
+  
+}
 
+.contact-icon{
 
+  height: 4rem;
+  width: 4rem;
+  float: right;
+  margin-right: 1rem;
+}
 
+.contact-icon-active{
 
+  height: 5rem;
+  margin-right: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
+}
 
+.side-icon-div{
+
+}
 
 
 

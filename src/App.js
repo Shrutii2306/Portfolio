@@ -7,18 +7,22 @@ import SideBar from './components/secondContainer/SideBar';
 import Content from './components/secondContainer/Content';
 import BackgroundText from './components/secondContainer/BackgroundText';
 import MainHeading from './components/thirdContainer/MainHeading';
-import MiddleImage from './components/thirdContainer/MiddleImage';
 import AboutContent from './components/thirdContainer/AboutContent';
 import SkillsContainer from './components/thirdContainer/SkillsContainer';
+import ResumeBtn from './components/firstContainer/ResumeBtn';
+import EmailForm from './components/fourthContainer/EmailForm';
+import Avatar from './components/fourthContainer/Avatar';
+import SideIcons from './components/fourthContainer/SideIcons';
 
 function App() {
   return (
     <div className="App">
-      <div className='first-container-div'>
+      <div className='first-container'>
         <NavBar />
         <div className='content'>
           <MainText/>
           <MainPhoto/>
+          
         </div>
       </div>
 
@@ -29,11 +33,21 @@ function App() {
         <SideBar/>
         <Content/>
       </div>
+
       <div className='third-container'>
         <MainHeading/>
         <div className='third-sub-container'>
         <AboutContent/>
         <SkillsContainer/>
+        </div>        
+      </div>
+
+      <div className='fourth-container'>
+      <Avatar/>
+        <EmailForm/>
+        
+        <div className='side-icon-div'>
+          <SideIcons/>
         </div>
         
       </div>
