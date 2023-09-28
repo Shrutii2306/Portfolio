@@ -11,10 +11,13 @@ export default function NavBar () {
 
         <nav className="navbar border-body navbar-css" data-bs-theme="dark" >
 
-  <div className="container-fluid">
+  <div className="container-fluid container-fluid-small">
+    <div className="navbar-email-div">
     <a  href="mailto:shrutisingh2366@gmail.com"><img src={mail_light} className="icons_light"/>sshrutissingh2002@gmail.com</a>
+
+    </div>
     
-    <div className="right-menu">
+    <div className="right-menu right-menu-small">
         <div className="right-menu-option" >
             <img src={about_light} className="icons_light"/><a className="nav-link menu-text" href="#about-heading">About</a>
         </div>

@@ -4,9 +4,51 @@
 @media screen  and (max-width: 1080px){
 
   .App{
+
+    text-align: center;
+  }
+
+  .first-container{
+
+    margin-top: -0.5rem;
+    height: fit-content;
+    background-color: #181515;
+    margin: none;
+    padding-bottom: 11rem;
+    min-width: fit-content;
+  }
+
+  .navbar-email-div{
+
     display: none;
   }
-  
+ 
+  .menu-text{
+
+    display: none;
+  }
+
+  .dark-mode-btn{
+    display: hidden;
+  }
+
+  .right-menu-small{
+
+    display: flex;
+    float: right;
+    border: #920808 solid;
+  }
+
+  .container-fluid-small{
+
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .icons_light{
+
+    height: 2rem;
+  }
 }
 
 @media screen  and (min-width: 1080px) {
