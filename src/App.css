@@ -1227,6 +1227,11 @@ align-items: flex-start;
   margin-top: 26rem;
   margin-left: 8rem;
 }
+
+.bottom-bg-text{
+
+  display: none;
+}
 /*THIRD CONTAINER*/
 
 .third-container{
