@@ -24,7 +24,7 @@ const miniProjects =[
     },
     {
         id : 5,
-        title:'Student Registration Form(React.js)',
+        title:'Registration Form',
         github:'https://github.com/Shrutii2306/registration-form.git',
         site:'https://registration-form-one-xi.vercel.app/',
         pimg : Student_form,

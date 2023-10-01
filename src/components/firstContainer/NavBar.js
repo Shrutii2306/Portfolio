@@ -19,16 +19,16 @@ export default function NavBar () {
     
     <div className="right-menu right-menu-small">
         <div className="right-menu-option" >
-            <img src={about_light} className="icons_light"/><a className="nav-link menu-text" href="#about-heading">About</a>
+        <a className="nav-link " href="#about-heading"><img src={about_light} className="icons_light"/><span className="menu-text" >About</span></a>
         </div>
         <div className="right-menu-option">
-            <img src={linkedin_light} className="icons_light"/><a className="nav-link menu-text" href="https://www.linkedin.com/in/shruti-singh-a172931b8/">LinkedIn</a>
+        <a className="nav-link" href="https://www.linkedin.com/in/shruti-singh-a172931b8/"><img src={linkedin_light} className="icons_light"/><span className="menu-text">LinkedIn</span></a>
         </div>
         <div className="right-menu-option">
-            <img src={project_light} className="icons_light"/><a className="nav-link menu-text" href="#redirect_projects">Projects</a>
+        <a className="nav-link" href="#redirect_projects"><img src={project_light} className="icons_light"/><span className="menu-text">Projects</span></a>
         </div>
         <div className="right-menu-option">
-            <img src={github_light} className="icons_light"/><a className="nav-link menu-text" href="https://github.com/Shrutii2306/">Github</a>
+        <a className="nav-link" href="https://github.com/Shrutii2306/"><img src={github_light} className="icons_light"/><span className="menu-text">Github</span></a>
         </div>
         <div className="dark-mode-btn">
             <img src={light_mode} className="icons_light"/>

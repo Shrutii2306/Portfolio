@@ -12,6 +12,11 @@ import SkillsContainer from './components/thirdContainer/SkillsContainer';
 import EmailForm from './components/fourthContainer/EmailForm';
 import SideIcons from './components/fourthContainer/SideIcons';
 import AvatarImage from './components/fourthContainer/AvatarImage';
+import LinkButtons from './components/firstContainer/LinkButtons';
+import MiddleHeading from './components/secondContainer/MiddleHeading';
+import Temp from './components/secondContainer/Temp';
+import miniProjects from './data/miniProjects';
+import BackgroundText2 from './components/secondContainer/BackgroundText2';
 
 function App() {
   return (
@@ -20,17 +25,27 @@ function App() {
         <NavBar />
         <div className='content'>
           <MainText/>
+          <LinkButtons/>
           <MainPhoto/>
-          
         </div>
       </div>
 
       <div className='second-container'>
+        <div className='middle-heading'>
+          <MiddleHeading/>
+        </div>
         <div className='top-bg-text'>
           <BackgroundText/>
         </div>
         <SideBar/>
+        <div className='middle-bg-text'>
+          <BackgroundText2/>
+        </div>
+        <div className='bottom-bg-text'>
+          <BackgroundText/>
+        </div>
         <Content/>
+        
       </div>
 
       <div className='third-container'>
@@ -50,7 +65,6 @@ function App() {
         </div>
         
       </div>
-      
     </div>
   );
 }
