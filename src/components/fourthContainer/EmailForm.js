@@ -7,6 +7,8 @@ export default function ContactUs() {
     const [newCode, setNewCode] = useState(0);
     const [visitorEmail, setVisitorEmail] = useState('');
     const [visitorName, setVisitorName] = useState('');
+    const [subject , setSubject] = useState('');
+    const [message , setMessage] = useState('');
     const [vStatus, setVStatus] = useState('F');
     const [errorMessage,setErrorMessage] = useState('');
     const [isDisabled, setDisabled] = useState(false);
@@ -27,6 +29,15 @@ export default function ContactUs() {
         setNewCode(e.target.value);
     }
 
+    const handleSubjectChange = (e) => {
+        setSubject(e.target.value);
+    }
+
+    const handleMessageChange = (e) => {
+
+        setMessage(e.target.value);
+    }
+
     const generateCode = (e) =>{
 
         setCode(Math.floor(Math.random()*99999));
@@ -42,13 +53,21 @@ export default function ContactUs() {
     }
   function sendEmail(e) {
     e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
-    emailjs.sendForm('service_kozc8fr', 'template_a0v6brx', e.target, '0EJNnqqf8fE9jNpN8')
+    if( visitorEmail=='' || visitorName == '' || subject == '' || message == '')
+    {
+        setErrorMessage('One or more fields are empty!');
+
+    }
+    else{
+
+        emailjs.sendForm('service_kozc8fr', 'template_a0v6brx', e.target, '0EJNnqqf8fE9jNpN8')
       .then((result) => {
           window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
           
       }, (error) => {
           console.log(error.text);
       });
+    }
   }
 
   function sendCode(EVENT) {
@@ -141,12 +160,12 @@ export default function ContactUs() {
             <input type="email" name="from_email" hidden value={visitorEmail} /> 
             
             <div className='form-row-4'>
-                <input type="text" name="subject" className='subject-div'/>
+                <input type="text" name="subject" onChange={handleSubjectChange} className='subject-div'/>
                 <label>Subject</label>
             </div>   
             <div className='form-row-5'>
                 <div className='mail-div'>
-                    <textarea className='textarea' name="html_message" />
+                    <textarea className='textarea' onChange={handleMessageChange} name="html_message" />
                     <label>Message</label>
                 </div>
                 <div className='send-btn'>
@@ -159,7 +178,9 @@ export default function ContactUs() {
             </div>
             
     </form>
-    
+    <div className='error-div'>
+                    {errorMessage}
+    </div>
     </div>
   );
 }

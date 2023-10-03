@@ -1,6 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Inter:wght@400;500;600;900&family=Libre+Baskerville:wght@700&family=Rubik+Vinyl&display=swap');
 
+@media screen  and (max-width: 1200px) and (min-width: 600px){
+
+  .App{
+    display: none;
+  }
+}
+
 @media screen  and (max-width: 600px){
 
 
@@ -693,7 +700,9 @@ label{
   background: none;  
   border: none;
   border-bottom: 2px solid;
-  border-color:#572b04;;
+  border-color:#572b04;
+  color: #dbd4cd;
+
 }
 
 input{
@@ -703,6 +712,7 @@ input{
   border-bottom: 2px solid;
   border-color:#572b04;
   width:10rem;
+  color: #dbd4cd;
 }
 
 .send-btn{
@@ -742,6 +752,12 @@ display: none;
 
 }
 
+.error-div{
+
+  margin-top: 2rem;
+  color: #FFAF69;
+  justify-content: center;
+}
   
 }
 
@@ -1488,7 +1504,9 @@ label{
   background: none;  
   border: none;
   border-bottom: 2px solid;
-  border-color:#572b04;;
+  border-color:#572b04;
+  color: #dbd4cd;
+
 }
 
 input{
@@ -1498,6 +1516,7 @@ input{
   border-bottom: 2px solid;
   border-color:#572b04;
   width:20rem;
+  color: #dbd4cd;
 }
 
 .send-btn{
@@ -1540,6 +1559,12 @@ input{
 
 }
 
+.error-div{
+
+  margin-top: 2rem;
+  color: #FFAF69;
+  justify-content: center;
+}
 }
 
 
